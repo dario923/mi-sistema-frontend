@@ -2,13 +2,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": [],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "types": [],
     "baseUrl": "./",
     "paths": {
-      "@env/*": ["src/environments/*"],
-      "@auth/*": ["src/app/pages/auth/*"]
+      "@env/*": ["src/environments/*"]
     }
   },
   "files": [
