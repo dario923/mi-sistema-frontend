@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "ng build",
+   "build": "ng build --configuration production",
+    "build:dev": "ng build",
     "api": "cd API && npm run dev",
     "dev": "concurrently \"npm run api\" \"npm run start\""
   },
