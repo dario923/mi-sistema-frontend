@@ -3,26 +3,14 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
+    "moduleResolution": "node",
     "paths": {
-      "@env/*": ["src/environments/*"],
-      "@auth/*": ["src/app/pages/auth/*"]
+      "@env/*": ["src/environments/*"]
     }
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": false,
-    "strictTemplates": false
   }
 }
