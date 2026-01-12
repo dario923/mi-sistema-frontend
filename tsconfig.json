@@ -10,11 +10,16 @@
     "lib": ["es2018", "dom"],
     "moduleResolution": "node",
     "paths": {
-      "@env/*": ["src/environments/*"]
-    }
+    "@env/*": ["src/environments/*"],
+    "@app/*": ["src/app/*"],
+    "@shared/*": ["src/app/shared/*"],
+    "@auth/*": ["src/app/pages/auth/*"],
+    "@pages/*": ["src/app/pages/*"]
+}
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": false,
     "strictTemplates": false
   }
 }
+
