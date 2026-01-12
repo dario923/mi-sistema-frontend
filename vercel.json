@@ -1,9 +1,5 @@
 {
-    "version": 2,
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "buildCommand": "npm run build -- --configuration=production",
+  "outputDirectory": "dist/login",
+  "framework": null
 }
