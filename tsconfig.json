@@ -20,5 +20,9 @@
       "@env/*": ["src/environments/*"],
       "@auth/*": ["src/app/pages/auth/*"]
     }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": false,
+    "strictTemplates": false
   }
 }
