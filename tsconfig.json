@@ -12,5 +12,9 @@
     "paths": {
       "@env/*": ["src/environments/*"]
     }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": false,
+    "strictTemplates": false
   }
 }
