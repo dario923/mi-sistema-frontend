@@ -3,23 +3,30 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": ["es2018", "dom"],
-    "moduleResolution": "node",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
     "paths": {
-    "@env/*": ["src/environments/*"],
-    "@app/*": ["src/app/*"],
-    "@shared/*": ["src/app/shared/*"],
-    "@auth/*": ["src/app/pages/auth/*"],
-    "@pages/*": ["src/app/pages/*"]
-}
+      "@auth/*": ["src/app/pages/auth/*"],
+      "@env/*": ["src/environments/*"],
+      "@app/*": ["src/app/*"],
+      "@shared/*": ["src/app/shared/*"]
+    }
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": false,
-    "strictTemplates": false
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }
-
