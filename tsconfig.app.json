@@ -1,10 +1,15 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "baseUrl": "./", 
+    "types": [],
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "paths": {
-      "@env/*": ["src/environments/*"]
+      "@env/*": ["src/environments/*"],
+      "@auth/*": ["src/app/pages/auth/*"]
     }
   },
   "files": [
@@ -12,6 +17,7 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/**/*.ts"
   ]
 }
